@@ -27,18 +27,54 @@ public:
 
     string getCedula() const {return cedula;}
     string getNombre() const {return nombre;}
+    int getGravedad() const {return gravedad;}
+    string getCondicion() const {return condicion;}
+    int getTurnoLlegada() const {return turnoLlegada;}
+    int getTurnosEnCola()const {return turnosEnCola;}
+    int getTiempoEspera() const {return tiempoEspera;}
+    int getTurnosTratamientoTotales() const {return turnosTratamientoTotales;}
+    int getTurnnosTratamientoRestantes() const {return turnosTratamientoRestantes;}
+    int getTurnosTratamientoCompletados() const{
+        return turnosTratamientoTotales - turnosTratamientoRestantes;
+    }
+void avanzarTurnoRnCola()
+    {
+        turnosEnCola++;
+        tiempoEspera+= 5;
+    }
+void aplicarTratamiento()
+    {
+        if (turnosTratamientoRestantes > 0)
+        {
+            turnosTratamientoRestantes--;
+        }
+    }
+bool listoAlta() const
+    {
+        return turnosTratamientoRestantes == 0;
+    }
+bool riesgoCritico()const
+    {
+        return gravedad == 1 && turnosEnCola >= 5;
+    }
 
+bool muerto() const
+    {
+        return gravedad == 1 && turnosEnCola > 6;
+    }
 
-
-
-
-
-
-
-
-
-
-
+string getTextoGravedad() const
+    {
+        switch (gravedad)
+        {
+            case 1: return "CRITICO";
+            case 2: return "SEVERO";
+            case 3: return "MODERADO";
+            case 4: return "LEVE";
+            case 5: return "CONSULTA";
+            case 6: return "DESCONOCIDO";
+        }
+    }
 
 };
 #endif //ESTRUCTURASFINAL_PACIENTE_H

@@ -1,0 +1,21 @@
+# Carpetas de compilación de CLion / CMake
+cmake-build-*/
+build/
+
+# Configuración local del IDE (rutas de tu PC, estado de ventanas)
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/usage.statistics.xml
+.idea/dictionaries/
+.idea/shelf/
+
+# Ejecutables y archivos compilados
+*.exe
+*.out
+*.app
+*.o
+*.obj
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
