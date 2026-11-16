@@ -7,4 +7,6 @@ include_directories(.)
 
 add_executable(Estructurasfinal
         Paciente.cpp
-        Paciente.h)
+        Paciente.h
+        RegistroPaciente.cpp
+        RegistroPaciente.h)
