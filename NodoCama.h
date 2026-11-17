@@ -23,7 +23,7 @@ public:
     NodoCama(int numero):
     numeroCama(numero),estado(EstadoCama::VACIA),
     pacienteActual(nullptr),turnosMantenimientoRestantes(0),
-    anterior(nullptr),siguiente(nullptr){}
+    Anterior(nullptr),Siguiente(nullptr){}
 
     ~NodoCama()
     {
@@ -43,7 +43,7 @@ bool asignarPaciente(Paciente* nuevoPaciente)
         estado = EstadoCama::OCUPADA;
         return true;
     }
-paciente* retirarPaciente()
+Paciente* retirarPaciente()
     {
         Paciente* temp = pacienteActual;
         pacienteActual = nullptr;
@@ -86,8 +86,6 @@ paciente* retirarPaciente()
         etiqueta += "]";
         return etiqueta;
     }
-
-
 
 
 

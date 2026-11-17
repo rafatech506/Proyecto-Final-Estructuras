@@ -13,4 +13,6 @@ add_executable(Estructurasfinal
         Medico.cpp
         Medico.h
         NodoCama.cpp
-        NodoCama.h)
+        NodoCama.h
+        SalaUrgencias.cpp
+        SalaUrgencias.h)
