@@ -15,4 +15,6 @@ add_executable(Estructurasfinal
         NodoCama.cpp
         NodoCama.h
         SalaUrgencias.cpp
-        SalaUrgencias.h)
+        SalaUrgencias.h
+        ColaTriage.cpp
+        ColaTriage.h)
