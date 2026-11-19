@@ -17,4 +17,6 @@ add_executable(Estructurasfinal
         SalaUrgencias.cpp
         SalaUrgencias.h
         ColaTriage.cpp
-        ColaTriage.h)
+        ColaTriage.h
+        GestorHistorial.cpp
+        GestorHistorial.h)
