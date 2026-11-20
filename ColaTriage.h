@@ -13,6 +13,7 @@ struct ComparadorPaciente
 {
     bool operator()(const Paciente* a, const Paciente* b) const{
         if (a->getGravedad() != b->getGravedad()){
+            return a->getGravedad() > b->getTurnoLlegada();
     }
     return a->getTurnoLlegada() > b->getTurnoLlegada();
 }
@@ -29,7 +30,7 @@ struct ComparadorPaciente
             while (!colaPrioridad.empty())
             {
                 Paciente* p = colaPrioridad.top();
-                colaPrioridad.top();
+                colaPrioridad.pop();
                 delete p;
             }
         }
@@ -110,7 +111,7 @@ void encolarPaciente(Paciente* p)
                 int g = p->getGravedad();
                 int t = p->getTurnosEnCola();
 
-                if (g == -1)
+                if (g == 1)
                 {
                     cantG1++;
                     turnosG1 += t;
@@ -143,7 +144,7 @@ void encolarPaciente(Paciente* p)
                 << " gravedad 1 (max. esperando " << maxEsperaG1 << "turnos)";
                 if (maxEsperaG1 >= 5)
                 {
-                    cout << "ALERTA CRITICA";
+                    cout << "[ALERTA CRITICA]";
                 }
                 cout <<"\n";
             }

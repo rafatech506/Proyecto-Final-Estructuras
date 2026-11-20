@@ -49,8 +49,8 @@ private:
         nombresBase = {"Rafael", "Juan", "Esteban", "Sebastian", "Laura", "Catalina", "Samuel", "Sofia", "Valentina", "Mateo", "Isabella", "Santiago"};
         apellidosBase = {"Salamanca", "Ruiz", "Pulgarin", "Urrea", "Gomez", "Herrera", "Rojas", "Mendoza", "Ortiz", "Silva", "Vargas", "Morales"};
 
-        condicionesCriticas = {"Paro cardiorrespiratorio", "Trauma craneoencefalico severo", "Infarto agudo de miocardio", "Hemorragia interna activa"};
-        condicionesSeveras = {"Fractura abierta de femur", "Crisis asmatica grave", "Apendicitis aguda complicada", "Quemadura de segundo grado extensa"};
+        condicionesCriticas = {"Paro cardiorrespiratorio", "Trauma craneoencefalico", "Paro cardiaco", "Hemorragia interna"};
+        condicionesSeveras = {"Fractura abierta ", "Crisis asmatica grave", "Apendicitis aguda", "Quemadura de segundo grado extensa"};
         condicionesModeradas = {"Dolor abdominal agudo", "Fiebre alta persistente", "Luxacion de hombro", "Deshidratacion moderada"};
         condicionesLeves = {"Esguince de tobillo", "Herida superficial en brazo", "Otitis aguda", "Reaccion alergica leve"};
         condicionesConsulta = {"Control de presion arterial", "Dolor lumbar cronico", "Certificado medico", "Revision de sutura"};

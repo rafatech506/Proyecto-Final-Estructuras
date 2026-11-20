@@ -147,13 +147,13 @@ void ejecutarAuditoriaperdidos()const
         for (const auto& par : tablaHashPacientes)
         {
             const RegistroPaciente& reg = par.second;
-            if (reg.estadoFinal.find("Perido")!= string::npos)
+            if (reg.estadoFinal.find("perdido")!= string::npos)
             {
                 totalPerdidos++;
-                cout << " * Paciente: " << reg.nombre << "CC:" << reg.cedula << "\n"
-                << ") Espera: " << reg.turnosEsperados << "turnos"
-                << "Medico de turnos:" << reg.medicoAsignado
-                << "turno" << reg.turnoResolucion << ")\n";
+                cout << " * Paciente: " << reg.nombre << " (CC:" << reg.cedula << "\n"
+                << ") Espera: " << reg.turnosEsperados << " turnos"
+                << "Medico de turno: " << reg.medicoAsignado
+                << "Turno" << reg.turnoResolucion << "\n";
             }
         }
 
