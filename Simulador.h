@@ -46,8 +46,8 @@ private:
     list <string> condicionesConsulta;
 
     void inicializarBancoDatos() {
-        nombresBase = {"Rafael", "Juan", "Esteban", "Sebastian", "Sofía", "Laura", "Camila", "Andres", "Valentina", "Mateo", "Isabella", "Santiago"};
-        apellidosBase = {"Salamanca", "Ruiz", "Mejia", "Velez", "Gomez", "Castro", "Rojas", "Mendoza", "Ortiz", "Silva", "Vargas", "Morales"};
+        nombresBase = {"Rafael", "Juan", "Esteban", "Sebastian", "Laura", "Catalina", "Samuel", "Sofia", "Valentina", "Mateo", "Isabella", "Santiago"};
+        apellidosBase = {"Salamanca", "Ruiz", "Pulgarin", "Urrea", "Gomez", "Herrera", "Rojas", "Mendoza", "Ortiz", "Silva", "Vargas", "Morales"};
 
         condicionesCriticas = {"Paro cardiorrespiratorio", "Trauma craneoencefalico severo", "Infarto agudo de miocardio", "Hemorragia interna activa"};
         condicionesSeveras = {"Fractura abierta de femur", "Crisis asmatica grave", "Apendicitis aguda complicada", "Quemadura de segundo grado extensa"};
@@ -186,7 +186,7 @@ public:
             cout << "\n";
             triage.imprimirResumenCola();
 
-            cout << "\n Acciones: [A] Izq  [D] Der  [R] Recibir  [T] Tratar  [X] Alta  [U] Ultimos  [C cedula] Consultar  [O] Cambiar Medico  [E] Terminar\n";
+            cout << "\n Acciones: [A]Izq [D]Der [R]Recibir [T]Tratar [X]Alta [U]Ultimos [C cedula]Consultar [O]Cambiar Medico [E]Terminar\n";
             cout << "Ingrese la accion: ";
 
             getline(cin, lineaEntrada);
@@ -333,7 +333,7 @@ public:
 
 void ejecutarMenuPrincipal()
     {
-        cout << "\n ---MENU PRINCIPAL---";
+        cout << "\n ---MENU PRINCIPAL---\n";
 
         string nombreInicial;
         cout << "Ingrese el nombre del medico inicial: ";

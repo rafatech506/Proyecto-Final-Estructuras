@@ -150,25 +150,25 @@ void encolarPaciente(Paciente* p)
             if (cantG2 > 0)
             {
                 cout << "  - " << cantG2 << (cantG2 == 1 ? " paciente" : " Pacientes")
-                << " gravedad 2 (esperando" << fixed << setprecision(1)
+                << " gravedad 2 (esperando " << fixed << setprecision(1)
                 <<(static_cast<double>(turnosG2) / cantG2) << "turnos prom.)\n";
             }
             if (cantG3 > 0)
             {
                 cout << "  - " << cantG3 << (cantG3 == 1 ? " paciente" : " Pacientes")
-                << " gravedad 3 (esperando" << fixed << setprecision(1)
+                << " gravedad 3 (esperando " << fixed << setprecision(1)
                 <<(static_cast<double>(turnosG3) / cantG3) << "turnos prom.)\n";
             }
             if (cantG4 > 0)
             {
                 cout << "  - " << cantG4 << (cantG4 == 1 ? " paciente" : " Pacientes")
-                << " gravedad 4 (esperando" << fixed << setprecision(1)
+                << " gravedad 4 (esperando " << fixed << setprecision(1)
                 << (static_cast<double>(turnosG4)/cantG4)<< "turnos prom.)\n";
             }
             if (cantG5 > 0)
             {
                 cout << "  - " << cantG5 << (cantG5 == 1 ? " paciente" : " Pacientes")
-                << " gravedad 5 (esperando" << fixed << setprecision(1)
+                << " gravedad 5 (esperando " << fixed << setprecision(1)
                 << (static_cast<double>(turnosG5)/cantG5)<< "turnos prom.)\n";
             }
 
