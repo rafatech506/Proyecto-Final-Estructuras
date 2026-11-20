@@ -229,7 +229,7 @@ public:
                     cama->asignarPaciente(p);
                     totalPacientesRecibidos++;
                     recibidosTurnoActual++;
-                    sumaMinutosEsperaRecibidos += p->getTurnosEnCola();
+                    sumaTurnosEsperaRecibidos += p->getTurnosEnCola();
                     sumaMinutosEsperaRecibidos += p->getTiempoEspera();
 
                     cout << "Paciente " << p-> getNombre()<< " (Gravedad" << p->getGravedad()
