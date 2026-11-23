@@ -274,7 +274,7 @@ public:
                     altasTurnoActual++;
 
                     cout <<"Alta medica exitosa para " << p->getNombre()
-                    << "CC:" << p->getCedula();
+                    << " CC:" << p->getCedula();
                     delete p;
                     procesarFinDeTurno();
                 }

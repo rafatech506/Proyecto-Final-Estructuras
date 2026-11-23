@@ -1,4 +1,4 @@
-
+//cantidad de camas y posicion de medico
 #ifndef ESTRUCTURASFINAL_SALAURGENCIAS_H
 #define ESTRUCTURASFINAL_SALAURGENCIAS_H
 #include <iostream>

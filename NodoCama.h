@@ -69,14 +69,14 @@ Paciente* retirarPaciente()
         }
     }
 
-    std::string obtenerEtiquetaVisual() const {
-        std::string etiqueta = "[ #" + std::to_string(numeroCama) + ":";
+    string obtenerEtiquetaVisual() const {
+        string etiqueta = "[ #" + to_string(numeroCama) + ":";
         if (estado == EstadoCama::VACIA) {
             etiqueta += "V ";
         } else if (estado == EstadoCama::MANTENIMIENTO) {
             etiqueta += "MNT";
         } else if (estado == EstadoCama::OCUPADA && pacienteActual != nullptr) {
-            etiqueta += "P" + std::to_string(pacienteActual->getGravedad());
+            etiqueta += "P" + to_string(pacienteActual->getGravedad());
             if (pacienteActual->getGravedad() == 1) {
                 etiqueta += "*";
             } else {

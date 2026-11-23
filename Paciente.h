@@ -1,4 +1,7 @@
 // Rafael Salamanca
+// (turnostratamientototales) calcula cuanto necesita en cama
+//avanzarTurnoEncola incluye el tiempo que pasa por turno
+// muerto y riesgo critico cambiables
 #ifndef ESTRUCTURASFINAL_PACIENTE_H
 #define ESTRUCTURASFINAL_PACIENTE_H
 #include <string>
